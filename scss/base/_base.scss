@@ -1,0 +1,53 @@
+html {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-size: 13px;
+  font-family: $body-font;
+  background-color: $primary-background;
+  height: 100%;
+  width: 100vw;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $header-font;
+  }
+
+  h2 {
+    padding-top: 5rem;
+    font-size: 40px;
+  }
+
+  hr {
+    width: 33px;
+    height: 1px;
+    background-color: black;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    overflow-x: hidden;
+  }
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, auto);
+  transition: all 1s;
+
+  @media only screen and (max-width: 600px) {
+    opacity: 1;
+  }
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}

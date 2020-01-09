@@ -1,0 +1,99 @@
+.package {
+  padding-bottom: 1rem;
+}
+
+.form-section-package {
+  padding-right: 40rem;
+  padding-left: 4.5rem;
+
+  h2 {
+    padding-top: 1rem;
+  }
+
+  @media only screen and (max-width: 1740px) {
+    padding-right: 35rem;
+  }
+
+  @media only screen and (max-width: 1610px) {
+    padding-right: 30rem;
+  }
+
+  @media only screen and (max-width: 1481px) {
+    padding-right: 25rem;
+  }
+
+  @media only screen and (max-width: 1351px) {
+    padding-right: 20rem;
+  }
+
+  @media only screen and (max-width: 1220px) {
+    padding-right: 15rem;
+  }
+
+  @media only screen and (max-width: 1110px) {
+    padding-right: 10rem;
+  }
+
+  @media only screen and (max-width: 992px) {
+    padding-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+}
+
+.description-package {
+  padding-left: 40rem;
+  padding-right: 4.5rem;
+
+  h2 {
+    padding-top: 1rem;
+  }
+
+  @media only screen and (max-width: 1740px) {
+    padding-left: 35rem;
+  }
+
+  @media only screen and (max-width: 1610px) {
+    padding-left: 30rem;
+  }
+
+  @media only screen and (max-width: 1481px) {
+    padding-left: 25rem;
+  }
+
+  @media only screen and (max-width: 1351px) {
+    padding-left: 20rem;
+  }
+
+  @media only screen and (max-width: 1220px) {
+    padding-left: 15rem;
+  }
+
+  @media only screen and (max-width: 1110px) {
+    padding-left: 10rem;
+  }
+
+  @media only screen and (max-width: 992px) {
+    padding-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+  }
+}
+
+.wedding-photo {
+  background-image: url('../shutter/img/contact.jpg');
+  height: 409px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+
+  @media only screen and (max-width: 600px) {
+    background-image: url('../shutter/img/contact-mobile.jpg');
+  }
+}

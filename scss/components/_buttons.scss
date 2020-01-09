@@ -1,0 +1,30 @@
+.btn,
+.btn-primary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+
+  &:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:active {
+    background-color: #545b62;
+    border-color: #545b62;
+  }
+  &:not(:disabled),
+  &:not(:disabled):active {
+    background-color: #545b62;
+    border-color: #545b62;
+  }
+}
+
+.btn {
+  &:focus {
+    box-shadow: none;
+  }
+}

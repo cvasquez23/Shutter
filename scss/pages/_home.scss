@@ -1,0 +1,172 @@
+// Hero Image
+.header {
+  height: 698px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: auto, auto, cover !important;
+  background-position: center 0;
+  text-transform: uppercase;
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)), url('../shutter/img/header.png');
+  color: white;
+  text-shadow: 1px 2px 1px black;
+
+  @media only screen and (max-width: 778px) {
+    background-position: 25% 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    //background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)), url('../shutter/img/header-mobile.png');
+    //background-position: center 80%;
+    background-size: auto, 1500px, cover !important;
+    height: 320px;
+    background-attachment: local;
+    background-position: 25% 40%;
+  }
+
+  p {
+    font-size: 24px;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 60px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 15px;
+    }
+  }
+
+  h1 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 20rem;
+    line-height: 50px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 23px;
+      line-height: 0;
+      padding-top: 10rem;
+    }
+  }
+}
+
+.hero-text {
+  position: static;
+  padding-top: 50vh;
+}
+
+//About
+.about {
+  margin-bottom: 1rem;
+}
+
+.selfie {
+  background-image: url('../shutter/img/about-pic.jpg');
+  height: 320px;
+  background-size: cover !important;
+  background-position: center center !important;
+
+  @media only screen and (min-width: 600px) {
+    height: 600px;
+  }
+}
+
+.about-text {
+  padding-left: 4.5rem;
+  padding-right: 40rem;
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  @media only screen and (max-width: 1740px) {
+    padding-right: 35rem;
+  }
+
+  @media only screen and (max-width: 1610px) {
+    padding-right: 30rem;
+  }
+
+  @media only screen and (max-width: 1481px) {
+    padding-right: 25rem;
+  }
+
+  @media only screen and (max-width: 1351px) {
+    padding-right: 20rem;
+  }
+
+  @media only screen and (max-width: 1220px) {
+    padding-right: 15rem;
+  }
+
+  @media only screen and (max-width: 1110px) {
+    padding-right: 10rem;
+  }
+}
+
+.book-me {
+  padding-top: 2.5rem;
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $cta-font;
+    font-weight: 600;
+    color: black;
+  }
+}
+
+// Portfolio
+.portfolio {
+  margin-bottom: 1rem;
+}
+
+//Contact Section
+.form-section {
+  padding-left: 40rem;
+  padding-right: 4.5rem;
+
+  @media only screen and (max-width: 1740px) {
+    padding-left: 35rem;
+  }
+
+  @media only screen and (max-width: 1610px) {
+    padding-left: 30rem;
+  }
+
+  @media only screen and (max-width: 1481px) {
+    padding-left: 25rem;
+  }
+
+  @media only screen and (max-width: 1351px) {
+    padding-left: 20rem;
+  }
+
+  @media only screen and (max-width: 1220px) {
+    padding-left: 15rem;
+  }
+
+  @media only screen and (max-width: 1110px) {
+    padding-left: 10rem;
+  }
+
+  @media only screen and (max-width: 992px) {
+    padding-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding-right: 10rem;
+    padding-left: 4.5rem;
+  }
+}
+
+.contact-photo {
+  background-image: url('../shutter/img/contact.jpg');
+  height: 780px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+
+  @media only screen and (max-width: 600px) {
+    background-image: url('../shutter/img/contact-mobile.jpg');
+  }
+}

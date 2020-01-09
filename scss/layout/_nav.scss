@@ -1,0 +1,57 @@
+//Sliding Mobile Nav
+#slidingNav {
+  @media only screen and (max-width: 992px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9fa;
+    overflow-y: hidden;
+  }
+}
+
+.hamburger,
+.hamburger--slider {
+  z-index: 2;
+}
+
+.ofh {
+  overflow-y: hidden;
+}
+
+//Nav Menu
+nav {
+  @media only screen and (min-width: 992px) {
+    height: 80px;
+  }
+}
+
+.navbar-nav {
+  li {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.social-media {
+  i {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    @media only screen and (max-width: 576px) {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}

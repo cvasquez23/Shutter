@@ -1,0 +1,52 @@
+// Footer
+footer {
+  background: #333333;
+  color: white;
+  height: 285px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: $body-font;
+    font-size: 17px;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.fa-up {
+  padding-top: 2.5rem;
+}
+
+.social-footer {
+  i {
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.credit {
+  p {
+    font-family: $body-font;
+    font-size: 12px;
+  }
+
+  a {
+    font-family: $body-font;
+    font-size: 12px;
+  }
+}
+
+.page-id-1249,
+.page-id-1294,
+.page-id-1316 {
+  footer {
+    opacity: 1;
+    transform: (1, auto);
+  }
+}
