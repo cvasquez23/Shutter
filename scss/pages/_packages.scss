@@ -87,13 +87,16 @@
 }
 
 .wedding-photo {
-  background-image: url('../shutter/img/contact.jpg');
-  height: 409px;
-  width: 100%;
-  background-size: cover !important;
-  background-position: center center !important;
+  @include package-picture(
+    url('../shutter/img/contact.jpg'),
+    url('../shutter/img/contact-mobile.jpg')
+  );
+}
 
-  @media only screen and (max-width: 600px) {
-    background-image: url('../shutter/img/contact-mobile.jpg');
-  }
+.baby-photo {
+  margin-top: 2rem;
+  @include package-picture(
+    url('../Shutter-child/img/packages/baby9_desktop.jpg'),
+    ('../Shutter-child/img/packages/baby9_desktop.jpg')
+  );
 }

@@ -1,21 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<?php
+/**
+* Template Name: Investment Page
+* Template Post Type: page
+* The investment page template for Giem Photography
+*
+* @package Giem Photography
+* @since Giem Photography Theme 1.0
+**/
+?>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
+<?php get_header(); ?>
 
-    <title></title>
-  </head>
-  <body>
+<main id="main" class="site-main" role="main">
+<?php
+/**
+* Template Name: Package Page
+* Template Post Type: page
+* The package page template for Giem Photography
+*
+* @package Giem Photography
+* @since Giem Photography Theme 1.0
+**/
+?>
+
+<?php get_header(); ?>
+
     <main id="main" class="site-main" role="main">
       <div class="justify-content-center">
         <h2 class="text-center">Investment</h2>
@@ -30,7 +39,7 @@
               alt="Card image cap"
             />
             <div class="card-body">
-              <h5 class="card-title">Weddings</h5>
+              <h5 class="card-title">Wedding Package</h5>
               <hr align="left" />
               <p class="card-text">
                 Have an upcoming wedding? Relive your special day with our
@@ -64,44 +73,29 @@
             </div>
           </div>
           <div class="card col-md-4 p-0">
-            <img
-              class="card-img-top"
-              src="../Shutter-child/img/packages/baby9_desktop.jpg)"
-              alt="Card image cap"
-            />
+
+            <?php
+            $babyImage = get_the_post_thumbnail_url(1456);
+            echo "<img src='$babyImage' class='card-img-top' alt='Card Image Top' />";
+            ?>
+    
             <div class="card-body">
-              <h5 class="card-title">Events</h5>
+              <h5 class="card-title">Newborn Package</h5>
               <hr align="left" />
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent sem sem, sodales a feugiat non.
+                Capture the forever cherished moments of new life with our newborn package!
               </p>
               <a
                 class="btn btn-primary"
-                href="https://www.giemphotography.com/event-package/"
+                href="<?php echo get_permalink(1456); ?>"
                 >Package Details</a
               >
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <!-- .site-main -->
+    </>
+    <!-- .site-main --> 
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+<?php get_footer(); ?>
+
