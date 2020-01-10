@@ -15,26 +15,11 @@ html {
 html,
 body {
   overflow-x: hidden;
-  font-size: 13px;
-  font-family: "Montserrat", sans-serif;
-  background-color: #f8f9fa;
   height: 100%;
   width: 100vw; }
-  html h1,
-  html h2,
-  html h3,
-  html h4,
-  html h5,
-  body h1,
-  body h2,
-  body h3,
-  body h4,
-  body h5 {
-    font-family: "Old Standard TT", serif; }
   html h2,
   body h2 {
-    padding-top: 5rem;
-    font-size: 40px; }
+    padding-top: 5rem; }
   html hr,
   body hr {
     width: 33px;
@@ -58,6 +43,26 @@ body {
 .tag.visible {
   opacity: 1;
   transform: translate(0, 0); }
+
+html,
+body {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f9fa; }
+  html h1,
+  html h2,
+  html h3,
+  html h4,
+  html h5,
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5 {
+    font-family: "Old Standard TT", serif; }
+  html h2,
+  body h2 {
+    font-size: 40px; }
 
 footer {
   background: #333333;

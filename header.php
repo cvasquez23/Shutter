@@ -10,10 +10,12 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
    <head>
-      <meta charset="<?php bloginfo( 'charset' ); ?>">
+      <meta charset="<?php bloginfo('charset'); ?>">
       <link rel="profile" href="http://gmpg.org/xfn/11" />
-      <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-      <?php if (is_singular() && get_option( 'thread_comments' )) wp_enqueue_script( 'comment-reply' ); ?>
+      <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+      <?php if (is_singular() && get_option('thread_comments')) {
+        wp_enqueue_script('comment-reply');
+      } ?>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <?php wp_head(); ?>
    </head>
@@ -50,39 +52,35 @@
 
          <?php if (is_page($page = '1182')) { ?>
             <div class="collapse navbar-collapse justify-content-center" id="slidingNav">
-            <?php
-               wp_nav_menu( array(
-                  'theme_location'    => 'primary',
-                  'depth'             => 2,
-                  'container'         => 'ul',
-                  // 'container_class'   => 'navbar-nav nav ml-auto',
-                  // 'container_id'      => 'bs-example-navbar-collapse-1',
-                  'menu_class'        => 'navbar-nav nav',
-                  // 'before'            => '<span class="nav-link">',
-                  // 'after'             => '</span>',
-                  // 'items_wrap'        => '<li class="nav-item">%3$s</li>',
-                  'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                  'walker'            => new WP_Bootstrap_Navwalker(),
-               ));
-            ?>
+            <?php wp_nav_menu(array(
+              'theme_location' => 'primary',
+              'depth' => 2,
+              'container' => 'ul',
+              // 'container_class'   => 'navbar-nav nav ml-auto',
+              // 'container_id'      => 'bs-example-navbar-collapse-1',
+              'menu_class' => 'navbar-nav nav',
+              // 'before'            => '<span class="nav-link">',
+              // 'after'             => '</span>',
+              // 'items_wrap'        => '<li class="nav-item">%3$s</li>',
+              'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+              'walker' => new WP_Bootstrap_Navwalker()
+            )); ?>
             </div>
          <?php } else { ?>
             <div class="collapse navbar-collapse justify-content-center" id="slidingNav">
-            <?php
-               wp_nav_menu( array(
-                  'theme_location'    => 'secondary',
-                  'depth'             => 2,
-                  'container'         => 'ul',
-                  // 'container_class'   => 'navbar-nav nav ml-auto',
-                  // 'container_id'      => 'bs-example-navbar-collapse-1',
-                  'menu_class'        => 'navbar-nav nav',
-                  // 'before'            => '<span class="nav-link">',
-                  // 'after'             => '</span>',
-                  // 'items_wrap'        => '<li class="nav-item">%3$s</li>',
-                  'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                  'walker'            => new WP_Bootstrap_Navwalker(),
-               ));
-            ?>
+            <?php wp_nav_menu(array(
+              'theme_location' => 'secondary',
+              'depth' => 2,
+              'container' => 'ul',
+              // 'container_class'   => 'navbar-nav nav ml-auto',
+              // 'container_id'      => 'bs-example-navbar-collapse-1',
+              'menu_class' => 'navbar-nav nav',
+              // 'before'            => '<span class="nav-link">',
+              // 'after'             => '</span>',
+              // 'items_wrap'        => '<li class="nav-item">%3$s</li>',
+              'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+              'walker' => new WP_Bootstrap_Navwalker()
+            )); ?>
             </div>
          <?php } ?>
       </nav>
