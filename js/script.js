@@ -58,17 +58,4 @@
   });
 
   // Defer offscreen images
-  function init() {
-    var imgDefer = document.getElementsByClassName(
-      'contact-photo',
-      'pic',
-      'modula-item'
-    );
-    for (var i = 0; i < imgDefer.length; i++) {
-      if (imgDefer[i].getAttribute('data-src')) {
-        imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
-      }
-    }
-  }
-  window.onload = init;
 })(jQuery);

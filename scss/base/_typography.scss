@@ -1,6 +1,6 @@
 html,
 body {
-  font-size: 13px;
+  font-size: 15px;
   font-family: $body-font;
   background-color: $primary-background;
 
@@ -15,4 +15,15 @@ body {
   h2 {
     font-size: 40px;
   }
+}
+
+.about-text {
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+.no-padding-dots {
+  list-style-type: none;
+  padding-left: 0;
 }

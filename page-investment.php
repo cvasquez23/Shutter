@@ -27,11 +27,11 @@
 
     <main id="main" class="site-main" role="main">
       <div class="justify-content-center">
-        <h2 class="text-center">Investment</h2>
+        <h2 class="text-center"><?php echo get_the_title(); ?></h2>
         <hr />
       </div>
       <div class="container">
-        <div class="row justify-content-between">
+        <div class="row justify-content-center">
           <div class="card col-md-4 p-0">
             <img
               class="card-img-top"
@@ -39,7 +39,10 @@
               alt="Card image cap"
             />
             <div class="card-body">
-              <h5 class="card-title">Wedding Package</h5>
+              <h5 class="card-title"><?php echo esc_html(
+                get_the_title(1316)
+              ); ?>
+              </h5>
               <hr align="left" />
               <p class="card-text">
                 Have an upcoming wedding? Relive your special day with our
@@ -47,9 +50,9 @@
               </p>
               <a
                 class="btn btn-primary"
-                href="https://www.giemphotography.com/investment/wedding"
-                >Package Details</a
-              >
+                href="<?php echo get_permalink(1316); ?>"
+                >Package Details
+              </a>
             </div>
           </div>
           <div class="card col-md-4 p-0">
@@ -68,8 +71,8 @@
               <a
                 class="btn btn-primary"
                 href="https://www.giemphotography.com/investment/senior-package/"
-                >Package Details</a
-              >
+                >Package Details
+              </a>
             </div>
           </div>
           <div class="card col-md-4 p-0">
@@ -80,7 +83,9 @@
             ?>
     
             <div class="card-body">
-              <h5 class="card-title">Newborn Package</h5>
+              <h5 class="card-title"><?php echo esc_html(
+                get_the_title(1456)
+              ); ?></h5>
               <hr align="left" />
               <p class="card-text">
                 Capture the forever cherished moments of new life with our newborn package!
