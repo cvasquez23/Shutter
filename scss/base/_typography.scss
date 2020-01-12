@@ -27,3 +27,37 @@ body {
   list-style-type: none;
   padding-left: 0;
 }
+
+//Footer
+footer {
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: $body-font;
+    font-size: 17px;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+.cv {
+  a {
+    color: #4eb89f;
+  }
+}
+
+.credit {
+  p {
+    font-family: $body-font;
+    font-size: 15px;
+  }
+
+  a {
+    font-family: $body-font;
+    font-size: 15px;
+  }
+}

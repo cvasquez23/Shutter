@@ -1,3 +1,7 @@
+.parent-pageid-1257 {
+  margin-top: 80px;
+}
+
 .package {
   padding-bottom: 1rem;
 }
@@ -98,5 +102,12 @@
   @include package-picture(
     url('../Shutter-child/img/packages/baby55.jpg'),
     ('../Shutter-child/img/packages/baby55.jpg')
+  );
+}
+
+.senior-photo {
+  @include package-picture(
+    url('../Shutter-child/img/packages/senior-details.jpg'),
+    ('../Shutter-child/img/packages/senior-details.jpg')
   );
 }

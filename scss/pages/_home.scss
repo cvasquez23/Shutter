@@ -67,10 +67,11 @@
   background-position: center center !important;
   border-radius: 0.5rem;
   margin-right: 1rem;
-  max-width: 550px;
+  max-width: 350px;
 
   @media only screen and (min-width: 600px) {
     height: 600px;
+    max-width: 550px;
   }
 }
 .text {
@@ -99,7 +100,7 @@
   }
 
   @media only screen and (max-width: 1220px) {
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
 
   @media only screen and (max-width: 1110px) {
@@ -163,7 +164,7 @@
   }
 
   @media only screen and (max-width: 600px) {
-    padding-right: 10rem;
+    padding-right: 4.5rem;
     padding-left: 4.5rem;
   }
 }

@@ -8,7 +8,7 @@
 ?>
 
       <!-- Footer -->
-      <footer class="">
+      <footer class="tag">
       <div class="container">
          <div class="row justify-content-center">
             <a class="back-to-top" href="#home"><i class="fas fa-chevron-up fa-2x fa-up"></i></a><br>
@@ -27,8 +27,9 @@
          </div>
          <div class="row justify-content-center credit">
             <p>Developed by
-               <a href="https://www.chrisvasquez.dev" target="_blank">Chris Vasquez</a>&nbsp 
-               <a href="www.wordpress.org" target="_blank">powered by WordPress</a>
+            <span class="cv">
+               <a href="https://www.chrisvasquez.dev" target="_blank">Chris Vasquez</a>&nbsp
+            </span>
             </p>
          </div>
       </div>

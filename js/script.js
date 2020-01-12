@@ -1,4 +1,27 @@
 (function($) {
+  //Other Fade In
+  $(document).on('scroll', function() {
+    let pageTop = $(document).scrollTop();
+    let pageBottom = pageTop + $(window).height();
+    let tags = $('.tag');
+
+    for (let i = 0; i < tags.length; i++) {
+      let tag = tags[i];
+
+      if ($(tag).position().top < pageBottom) {
+        $(tag).addClass('visible');
+      }
+    }
+  });
+
+  // Change Navbar Background
+  $(window).scroll(function() {
+    $(window).scrollTop() >= 100
+      ? ($('.fade-in').addClass('scrolled'), $('.header').addClass('scrolled'))
+      : ($('.fade-in').removeClass('scrolled'),
+        $('.header').removeClass('scrolled'));
+  });
+
   //Hamburger Menu
   $(document).ready(function() {
     $('button').click(function() {
@@ -30,32 +53,14 @@
     jQuery('a[href^="#"]').click(function(e) {
       e.preventDefault();
 
-      let position = jQuery(jQuery(this).attr('href')).offset().top;
+      let position = jQuery(jQuery(this).attr('href')).offset().top - 80;
 
       jQuery('body, html').animate(
         {
           scrollTop: position
         },
-        500,
-        'linear'
+        750
       );
     });
   });
-
-  //Other Fade In
-  $(document).on('scroll', function() {
-    let pageTop = $(document).scrollTop();
-    let pageBottom = pageTop + $(window).height();
-    let tags = $('.tag');
-
-    for (let i = 0; i < tags.length; i++) {
-      let tag = tags[i];
-
-      if ($(tag).position().top < pageBottom) {
-        $(tag).addClass('visible');
-      }
-    }
-  });
-
-  // Defer offscreen images
 })(jQuery);

@@ -13,13 +13,14 @@
       <meta charset="<?php bloginfo('charset'); ?>">
       <link rel="profile" href="http://gmpg.org/xfn/11" />
       <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+      <link rel="shortcut icon" href="/kim-giem.ico" type="image/x-icon" />
       <?php if (is_singular() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
       } ?>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <?php wp_head(); ?>
    </head>
-   <body <?php body_class(); ?>>
+   <body data-spy="scroll" data-target=".navbar" data-offset="85" <?php body_class(); ?>>
       <!-- WP Admin Bar Overlapping Fix -->
       <?php if (is_admin_bar_showing()) { ?>
          <style>
@@ -36,7 +37,7 @@
 
       <!-- Navbar -->
       <!-- WORDPRESS -->
-      <nav id="home" class="navbar navbar-expand-lg navbar-light bg-light fadeIn">
+      <nav id="" class="navbar navbar-expand-lg navbar-light fixed-top fade-in">
          <div class="social-media d-lg-none">
             <a href="https://www.facebook.com/pages/category/Photographer/Kim-Zuidema-Giems-Photography-392580977567305/" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a>
             <a href="" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>

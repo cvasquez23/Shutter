@@ -26,7 +26,7 @@
 <?php get_header(); ?>
 
     <main id="main" class="site-main" role="main">
-      <div class="justify-content-center">
+      <div id="home" class="justify-content-center">
         <h2 class="text-center"><?php echo get_the_title(); ?></h2>
         <hr />
       </div>
@@ -50,19 +50,20 @@
               </p>
               <a
                 class="btn btn-primary"
-                href="<?php echo get_permalink(1316); ?>"
+                href="<?php echo esc_html(get_permalink(1316)); ?>"
                 >Package Details
               </a>
             </div>
           </div>
           <div class="card col-md-4 p-0">
-            <img
-              class="card-img-top"
-              src="https://placekitten.com/g/480/480"
-              alt="Card image cap"
-            />
+          <?php
+          $Image = get_the_post_thumbnail_url(1407);
+          echo "<img src='$Image' class='card-img-top' alt='Card Image Top' />";
+          ?>
             <div class="card-body">
-              <h5 class="card-title">Senior Package</h5>
+              <h5 class="card-title"><?php echo esc_html(
+                get_the_title(1407)
+              ); ?></h5>
               <hr align="left" />
               <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -70,16 +71,16 @@
               </p>
               <a
                 class="btn btn-primary"
-                href="https://www.giemphotography.com/investment/senior-package/"
-                >Package Details
-              </a>
+                href="<?php echo esc_html(get_permalink(1407)); ?>"
+                >Package Details</a
+              >
             </div>
           </div>
           <div class="card col-md-4 p-0">
 
             <?php
-            $babyImage = get_the_post_thumbnail_url(1456);
-            echo "<img src='$babyImage' class='card-img-top' alt='Card Image Top' />";
+            $Image = get_the_post_thumbnail_url(1456);
+            echo "<img src='$Image' class='card-img-top' alt='Card Image Top' />";
             ?>
     
             <div class="card-body">
@@ -92,7 +93,7 @@
               </p>
               <a
                 class="btn btn-primary"
-                href="<?php echo get_permalink(1456); ?>"
+                href="<?php echo esc_html(get_permalink(1456)); ?>"
                 >Package Details</a
               >
             </div>

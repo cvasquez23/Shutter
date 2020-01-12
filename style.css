@@ -15,8 +15,8 @@ html {
 html,
 body {
   overflow-x: hidden;
-  height: 100%;
-  width: 100vw; }
+  width: 100vw;
+  position: relative; }
   html h2,
   body h2 {
     padding-top: 4rem; }
@@ -76,9 +76,7 @@ body {
   padding-left: 0; }
 
 footer {
-  background: #333333;
-  color: white;
-  height: 285px; }
+  color: white; }
   footer a {
     color: white;
     text-decoration: none;
@@ -87,6 +85,21 @@ footer {
     footer a:hover {
       color: white;
       text-decoration: none; }
+
+.cv a {
+  color: #4eb89f; }
+
+.credit p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px; }
+
+.credit a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px; }
+
+footer {
+  background: #333333;
+  height: 285px; }
 
 .fa-up {
   padding-top: 2.5rem; }
@@ -97,17 +110,8 @@ footer {
   padding-right: 1.5rem;
   padding-bottom: 2.5rem; }
 
-.credit p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px; }
-
-.credit a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px; }
-
 .page-id-1249 footer,
-.page-id-1294 footer,
-.page-id-1316 footer {
+.blog footer {
   opacity: 1;
   transform: 1, auto; }
 
@@ -132,6 +136,14 @@ footer {
 @media only screen and (min-width: 992px) {
   nav {
     height: 80px; } }
+
+.fade-in {
+  background-color: rgba(248, 249, 250, 0);
+  transition: 1s ease; }
+
+.scrolled {
+  background-color: #f8f9fa;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5); }
 
 .navbar-nav li {
   padding-left: 30px;
@@ -200,6 +212,9 @@ footer {
 .wpcf7-mail-sent-ok {
   border: 2px solid #333333; }
 
+.blog {
+  margin-top: 80px; }
+
 .header {
   height: 698px;
   width: 100%;
@@ -253,10 +268,11 @@ footer {
   background-position: center center !important;
   border-radius: 0.5rem;
   margin-right: 1rem;
-  max-width: 550px; }
+  max-width: 350px; }
   @media only screen and (min-width: 600px) {
     .selfie {
-      height: 600px; } }
+      height: 600px;
+      max-width: 550px; } }
 
 .text {
   margin-left: 1rem;
@@ -279,7 +295,7 @@ footer {
       padding-right: 7rem; } }
   @media only screen and (max-width: 1220px) {
     .about-text {
-      padding-right: 3rem; } }
+      padding-right: 2rem; } }
   @media only screen and (max-width: 1110px) {
     .about-text {
       padding-right: 1.5rem;
@@ -326,7 +342,7 @@ footer {
       padding-bottom: 3rem; } }
   @media only screen and (max-width: 600px) {
     .form-section {
-      padding-right: 10rem;
+      padding-right: 4.5rem;
       padding-left: 4.5rem; } }
 
 .contact-photo {
@@ -339,12 +355,16 @@ footer {
     .contact-photo {
       background-image: url("../shutter/img/contact-mobile.jpg"); } }
 
-.page-id-1257 .card a {
-  color: #ffffff; }
+.page-id-1257 {
+  margin-top: 80px; }
+  .page-id-1257 .card a {
+    color: #ffffff; }
+  .page-id-1257 footer {
+    opacity: 1;
+    transform: 1, auto; }
 
-.page-id-1257 footer {
-  opacity: 1;
-  transform: 1, auto; }
+.parent-pageid-1257 {
+  margin-top: 80px; }
 
 .package {
   padding-bottom: 1rem; }
@@ -437,3 +457,16 @@ footer {
   @media only screen and (max-width: 600px) {
     .baby-photo {
       background-image: "../Shutter-child/img/packages/baby55.jpg"; } }
+
+.senior-photo {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+  background-image: url("../Shutter-child/img/packages/senior-details.jpg");
+  height: 25.625rem;
+  max-width: 25.625rem;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important; }
+  @media only screen and (max-width: 600px) {
+    .senior-photo {
+      background-image: "../Shutter-child/img/packages/senior-details.jpg"; } }

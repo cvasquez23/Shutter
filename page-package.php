@@ -12,7 +12,7 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main" role="main">
-  <div class="justify-content-center">
+  <div id="home" class="justify-content-center">
     <h2 class="text-center"><?php echo get_the_title(); ?></h2>
     <hr />
   </div>
