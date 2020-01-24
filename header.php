@@ -1,9 +1,9 @@
 <?php
 /**
-   * The header for Giem PhotoGraphy Theme
+   * The header for Giem PhotoGraphy
    *
    * @package Giem PhotoGraphy
-   * @since Giem PhotoGraphy Theme 1.0
+   * @since Shutter Theme 1.0.0
 **/
 ?>
 
@@ -45,43 +45,33 @@
             <a href="" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
          </div>
          <button class="hamburger hamburger--slider d-lg-none" type="button" data-toggle="slide-collapse" data-target="#slidingNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-         </span>
+            <span class="hamburger-box">
+               <span class="hamburger-inner"></span>
+            </span>
          </button>
 
 
          <?php if (is_page($page = '1182')) { ?>
             <div class="collapse navbar-collapse justify-content-center" id="slidingNav">
-            <?php wp_nav_menu(array(
-              'theme_location' => 'primary',
-              'depth' => 2,
-              'container' => 'ul',
-              // 'container_class'   => 'navbar-nav nav ml-auto',
-              // 'container_id'      => 'bs-example-navbar-collapse-1',
-              'menu_class' => 'navbar-nav nav',
-              // 'before'            => '<span class="nav-link">',
-              // 'after'             => '</span>',
-              // 'items_wrap'        => '<li class="nav-item">%3$s</li>',
-              'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-              'walker' => new WP_Bootstrap_Navwalker()
-            )); ?>
+               <?php wp_nav_menu(array(
+                 'theme_location' => 'primary',
+                 'depth' => 2,
+                 'container' => 'ul',
+                 'menu_class' => 'navbar-nav nav',
+                 'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                 'walker' => new WP_Bootstrap_Navwalker()
+               )); ?>
             </div>
          <?php } else { ?>
             <div class="collapse navbar-collapse justify-content-center" id="slidingNav">
-            <?php wp_nav_menu(array(
-              'theme_location' => 'secondary',
-              'depth' => 2,
-              'container' => 'ul',
-              // 'container_class'   => 'navbar-nav nav ml-auto',
-              // 'container_id'      => 'bs-example-navbar-collapse-1',
-              'menu_class' => 'navbar-nav nav',
-              // 'before'            => '<span class="nav-link">',
-              // 'after'             => '</span>',
-              // 'items_wrap'        => '<li class="nav-item">%3$s</li>',
-              'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-              'walker' => new WP_Bootstrap_Navwalker()
-            )); ?>
+               <?php wp_nav_menu(array(
+                 'theme_location' => 'secondary',
+                 'depth' => 2,
+                 'container' => 'ul',
+                 'menu_class' => 'navbar-nav nav',
+                 'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                 'walker' => new WP_Bootstrap_Navwalker()
+               )); ?>
             </div>
          <?php } ?>
       </nav>

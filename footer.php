@@ -3,7 +3,7 @@
    * The footer for Giem Photography
    *
    * @package Giem Photography
-   * @since Giem Photography Theme 1.0
+   * @since Shutter Theme 1.0.0
 **/
 ?>
 
