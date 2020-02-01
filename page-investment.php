@@ -16,10 +16,10 @@
     <h2 class="text-center"><?php echo esc_html(get_the_title()); ?></h2>
     <hr />
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row justify-content-center">
 
-      <div class="card col-md-4 p-0">
+      <div class="card col-md-3 p-0">
         <img
           class="card-img-top"
           src="https://placekitten.com/g/480/480"
@@ -42,7 +42,7 @@
         </div>
       </div>
 
-      <div class="card col-md-4 p-0">
+      <div class="card col-md-3 p-0">
         <?php
         $Image = get_the_post_thumbnail_url(1407);
         echo "<img src='$Image' class='card-img-top' alt='Card Image Top' />";
@@ -63,7 +63,7 @@
         </div>
       </div>
 
-      <div class="card col-md-4 p-0">
+      <div class="card col-md-3 p-0">
         <?php
         $Image = get_the_post_thumbnail_url(1456);
         echo "<img src='$Image' class='card-img-top' alt='Card Image Top' />";
@@ -78,6 +78,27 @@
           <a
             class="btn btn-primary"
             href="<?php echo esc_html(get_permalink(1456)); ?>"
+          >
+            Package Details
+          </a>
+        </div>
+      </div>
+
+      <div class="card col-md-3 p-0">
+        <?php
+        $Image = get_the_post_thumbnail_url(1524);
+        echo "<img src='$Image' class='card-img-top' alt='Card Image Top' />";
+        ?>
+        <div class="card-body">
+          <h5 class="card-title">
+            <?php echo esc_html(get_the_title(1524)); ?></h5>
+          <hr align="left" />
+          <p class="card-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi nostrum distinctio, itaque aliquam mollitia praesentium.
+          </p>
+          <a
+            class="btn btn-primary"
+            href="<?php echo esc_html(get_permalink(1524)); ?>"
           >
             Package Details
           </a>
