@@ -3,9 +3,11 @@
  *Author: Chris Vasquez
  *Author URI: https://www.chrisvasquez.dev
  *Description: The theme for Giem Photography
- *Version: 1.0.0
+ *Version: 1.0
  *License: GNU 
+ *License URI: 
  *Text Domain: Giem Photography
+ *Tags: 
 **/
 html {
   overflow-x: hidden; }
@@ -72,11 +74,14 @@ body {
 .no-padding-dots {
   list-style-type: none;
   padding-left: 0; }
-  .no-padding-dots li {
-    padding-bottom: 0.5rem; }
+
+.cv a {
+  color: #4eb89f; }
 
 footer {
-  color: white; }
+  background: #333333;
+  color: white;
+  height: 285px; }
   footer a {
     color: white;
     text-decoration: none;
@@ -85,21 +90,6 @@ footer {
     footer a:hover {
       color: white;
       text-decoration: none; }
-
-.cv a {
-  color: #4eb89f; }
-
-.credit p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px; }
-
-.credit a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px; }
-
-footer {
-  background: #333333;
-  height: 285px; }
 
 .fa-up {
   padding-top: 2.5rem; }
@@ -110,8 +100,17 @@ footer {
   padding-right: 1.5rem;
   padding-bottom: 2.5rem; }
 
+.credit p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px; }
+
+.credit a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px; }
+
 .page-id-1249 footer,
-.blog footer {
+.page-id-1294 footer,
+.page-id-1316 footer {
   opacity: 1;
   transform: 1, auto; }
 
@@ -262,7 +261,7 @@ footer {
   margin-top: 1rem; }
 
 .selfie {
-  background-image: url("https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_550/https://www.giemphotography.com/wp-content/uploads/2020/06/about-pic.jpg");
+  background-image: url("../Shutter-child/img/about-pic.jpg");
   height: 320px;
   background-size: cover !important;
   background-position: center center !important;
@@ -295,7 +294,7 @@ footer {
       padding-right: 7rem; } }
   @media only screen and (max-width: 1220px) {
     .about-text {
-      padding-right: 2rem; } }
+      padding-right: 3rem; } }
   @media only screen and (max-width: 1110px) {
     .about-text {
       padding-right: 1.5rem;
@@ -342,7 +341,7 @@ footer {
       padding-bottom: 3rem; } }
   @media only screen and (max-width: 600px) {
     .form-section {
-      padding-right: 4.5rem;
+      padding-right: 10rem;
       padding-left: 4.5rem; } }
 
 .contact-photo {
@@ -457,29 +456,3 @@ footer {
   @media only screen and (max-width: 600px) {
     .baby-photo {
       background-image: "../Shutter-child/img/packages/baby55.jpg"; } }
-
-.senior-photo {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
-  background-image: url("../Shutter-child/img/packages/senior-details.jpg");
-  height: 25.625rem;
-  max-width: 25.625rem;
-  width: 100%;
-  background-size: cover !important;
-  background-position: center center !important; }
-  @media only screen and (max-width: 600px) {
-    .senior-photo {
-      background-image: "../Shutter-child/img/packages/senior-details.jpg"; } }
-
-.toddler-photo {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
-  background-image: url("../Shutter-child/img/packages/toddler-details.jpg");
-  height: 25.625rem;
-  max-width: 25.625rem;
-  width: 100%;
-  background-size: cover !important;
-  background-position: center center !important; }
-  @media only screen and (max-width: 600px) {
-    .toddler-photo {
-      background-image: "../Shutter-child/img/packages/toddler-details.jpg"; } }
