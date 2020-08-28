@@ -1,7 +1,3 @@
-.parent-pageid-1257 {
-  margin-top: 80px;
-}
-
 .package {
   padding-bottom: 1rem;
 }
@@ -91,23 +87,13 @@
 }
 
 .wedding-photo {
-  @include package-picture(
-    url('../shutter/img/contact.jpg'),
-    url('../shutter/img/contact-mobile.jpg')
-  );
-}
+  background-image: url('../shutter/img/contact.jpg');
+  height: 409px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
 
-.baby-photo {
-  margin-top: 2rem;
-  @include package-picture(
-    url('../Shutter-child/img/packages/baby55.jpg'),
-    ('../Shutter-child/img/packages/baby55.jpg')
-  );
-}
-
-.senior-photo {
-  @include package-picture(
-    url('../Shutter-child/img/packages/senior-details.jpg'),
-    ('../Shutter-child/img/packages/senior-details.jpg')
-  );
+  @media only screen and (max-width: 600px) {
+    background-image: url('../shutter/img/contact-mobile.jpg');
+  }
 }

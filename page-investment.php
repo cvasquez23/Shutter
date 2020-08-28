@@ -20,11 +20,10 @@
     <div class="row justify-content-center">
 
       <div class="card col-md-3 p-0">
-        <img
-          class="card-img-top"
-          src="https://placekitten.com/g/480/480"
-          alt="Card image cap"
-        />
+        <?php
+        $Image = get_the_post_thumbnail_url(1316);
+        echo "<img src='$Image' class='card-img-top' alt='Card Image Top' />";
+        ?>
         <div class="card-body">
           <h5 class="card-title">
             <?php echo esc_html(get_the_title(1316)); ?>
@@ -94,11 +93,32 @@
             <?php echo esc_html(get_the_title(1524)); ?></h5>
           <hr align="left" />
           <p class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi nostrum distinctio, itaque aliquam mollitia praesentium.
+            There's no time like now to capture the love of the family!
           </p>
           <a
             class="btn btn-primary"
             href="<?php echo esc_html(get_permalink(1524)); ?>"
+          >
+            Package Details
+          </a>
+        </div>
+      </div>
+
+      <div class="card col-md-3 p-0">
+        <?php
+        $Image = get_the_post_thumbnail_url(1585);
+        echo "<img src='$Image' class='card-img-top' alt='Card Image Top' />";
+        ?>
+        <div class="card-body">
+          <h5 class="card-title">
+            <?php echo esc_html(get_the_title(1585)); ?></h5>
+          <hr align="left" />
+          <p class="card-text">
+            Your baby is growing up! Be sure to capture every milestone along the way!
+          </p>
+          <a
+            class="btn btn-primary"
+            href="<?php echo esc_html(get_permalink(1585)); ?>"
           >
             Package Details
           </a>

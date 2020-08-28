@@ -6,16 +6,14 @@
 }
 
 .card {
-  margin: 1rem 1.5rem 5rem 1.5rem;
+  margin: 1rem 5rem 5rem 5rem;
   border-radius: 1rem;
   border: none;
   box-shadow: 0 30px 30px 5px rgba(15, 26, 39, 0.2);
-  max-width: 22rem;
 
   .card-img-top {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    max-height: 330px;
   }
 }
 

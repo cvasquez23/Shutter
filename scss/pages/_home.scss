@@ -57,55 +57,49 @@
 //About
 .about {
   margin-bottom: 1rem;
-  margin-top: 1rem;
 }
 
 .selfie {
-  background-image: url('../Shutter-child/img/about-pic.jpg');
+  background-image: url('../shutter/img/about-pic.jpg');
   height: 320px;
   background-size: cover !important;
   background-position: center center !important;
-  border-radius: 0.5rem;
-  margin-right: 1rem;
-  max-width: 350px;
 
   @media only screen and (min-width: 600px) {
     height: 600px;
-    max-width: 550px;
   }
-}
-.text {
-  margin-left: 1rem;
-  max-width: 550px;
 }
 
 .about-text {
   padding-left: 4.5rem;
-  padding-right: 33rem;
+  padding-right: 40rem;
+
+  p {
+    font-size: 1.25rem;
+  }
 
   @media only screen and (max-width: 1740px) {
-    padding-right: 20rem;
+    padding-right: 35rem;
   }
 
   @media only screen and (max-width: 1610px) {
-    padding-right: 15rem;
+    padding-right: 30rem;
   }
 
   @media only screen and (max-width: 1481px) {
-    padding-right: 10.5rem;
+    padding-right: 25rem;
   }
 
   @media only screen and (max-width: 1351px) {
-    padding-right: 7rem;
+    padding-right: 20rem;
   }
 
   @media only screen and (max-width: 1220px) {
-    padding-right: 2rem;
+    padding-right: 15rem;
   }
 
   @media only screen and (max-width: 1110px) {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 10rem;
   }
 }
 
@@ -122,10 +116,6 @@
 }
 
 // Portfolio
-#portfolio {
-  padding: 0;
-}
-
 .portfolio {
   margin-bottom: 1rem;
 }
@@ -164,7 +154,7 @@
   }
 
   @media only screen and (max-width: 600px) {
-    padding-right: 4.5rem;
+    padding-right: 10rem;
     padding-left: 4.5rem;
   }
 }
