@@ -2,10 +2,10 @@
 /**
 * Template Name: Package Page
 * Template Post Type: page
-* The package page template for Giem Photography
+* The package page template for Shutter
 *
-* @package Giem Photography
-* @since Giem Photography Theme 1.0
+* @package Shutter
+* @since Shutter Theme 1.0
 **/
 ?>
 

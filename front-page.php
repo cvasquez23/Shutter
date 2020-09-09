@@ -1,9 +1,9 @@
 <?php
 /**
- * The font-page for Giem Photography Theme
+ * The font-page for Shutter Theme
  *
- * @package Giem Photography
- * @since Giem Photography Theme 1.0.0
+ * @package Shutter
+ * @since Shutter Theme 1.0.0
  */
 ?>
 
@@ -40,6 +40,18 @@
     <div id="portfolio" class="container-fluid tag">
       <div id="portfolio" class="portfolio">
         <?php echo do_shortcode('[modula id="1197"]'); ?>
+      </div>
+    </div>
+
+    <div id="connect" class="container tag">
+      <div class="row justify-content-center">
+        <div>
+          <h2>Connect With Me</h2>
+          <hr>
+        </div>
+        <?php echo do_shortcode(
+          '[efb_feed fanpage_id="102699908246418" words_limit="25" post_limit="3" skin_id="1680" cache_unit="1" cache_duration="minutes" links_new_tab="1" show_like_box="0"]'
+        ); ?>
       </div>
     </div>
 

@@ -1,9 +1,9 @@
 <?php
 /**
- * The index for Giem Photography Theme
+ * The index for Shutter Theme
  *
- * @package Giem Photography
- * @since Giem Photography Theme 1.0.0
+ * @package Shutter
+ * @since Shutter Theme 1.0.0
  */
 ?>
 

@@ -1,8 +1,8 @@
 <?php
 /**
-   * The header for Giem PhotoGraphy
+   * The header for Shutter
    *
-   * @package Giem PhotoGraphy
+   * @package Shutter
    * @since Shutter Theme 1.0.0
 **/
 ?>
