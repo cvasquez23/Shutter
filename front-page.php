@@ -43,6 +43,18 @@
       </div>
     </div>
 
+    <div id="connect" class="container tag">
+      <div class="row justify-content-center">
+        <div>
+          <h2>Connect With Me</h2>
+          <hr>
+        </div>
+        <?php echo do_shortcode(
+          '[efb_feed fanpage_id="102699908246418" words_limit="25" post_limit="3" skin_id="1680" cache_unit="1" cache_duration="minutes" links_new_tab="1" show_like_box="0"]'
+        ); ?>
+      </div>
+    </div>
+
     <div id="contact" class="container-fluid tag">
       <div class="row">
         <div class="col-lg-6 form-section">

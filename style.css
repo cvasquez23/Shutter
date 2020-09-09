@@ -3,9 +3,11 @@
  *Author: Chris Vasquez
  *Author URI: https://www.chrisvasquez.dev
  *Description: The theme for Giem Photography
- *Version: 1.0.0
+ *Version: 1.0
  *License: GNU 
+ *License URI: 
  *Text Domain: Giem Photography
+ *Tags: 
 **/
 html {
   overflow-x: hidden; }
@@ -13,15 +15,11 @@ html {
 html,
 body {
   overflow-x: hidden;
-  width: 100vw;
-  position: relative; }
+  height: 100%;
+  width: 100vw; }
   html h2,
   body h2 {
-    padding-top: 4rem; }
-  html h3,
-  body h3 {
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
+    padding-top: 5rem; }
   html hr,
   body hr {
     width: 33px;
@@ -48,7 +46,7 @@ body {
 
 html,
 body {
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Montserrat", sans-serif;
   background-color: #f8f9fa; }
   html h1,
@@ -66,17 +64,10 @@ body {
   body h2 {
     font-size: 40px; }
 
-.about-text p {
-  font-size: 1.1rem; }
-
-.no-padding-dots {
-  list-style-type: none;
-  padding-left: 0; }
-  .no-padding-dots li {
-    padding-bottom: 0.5rem; }
-
 footer {
-  color: white; }
+  background: #333333;
+  color: white;
+  height: 285px; }
   footer a {
     color: white;
     text-decoration: none;
@@ -85,21 +76,6 @@ footer {
     footer a:hover {
       color: white;
       text-decoration: none; }
-
-.cv a {
-  color: #4eb89f; }
-
-.credit p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px; }
-
-.credit a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px; }
-
-footer {
-  background: #333333;
-  height: 285px; }
 
 .fa-up {
   padding-top: 2.5rem; }
@@ -110,8 +86,17 @@ footer {
   padding-right: 1.5rem;
   padding-bottom: 2.5rem; }
 
+.credit p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px; }
+
+.credit a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px; }
+
 .page-id-1249 footer,
-.blog footer {
+.page-id-1294 footer,
+.page-id-1316 footer {
   opacity: 1;
   transform: 1, auto; }
 
@@ -136,14 +121,6 @@ footer {
 @media only screen and (min-width: 992px) {
   nav {
     height: 80px; } }
-
-.fade-in {
-  background-color: rgba(248, 249, 250, 0);
-  transition: 1s ease; }
-
-.scrolled {
-  background-color: #f8f9fa;
-  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5); }
 
 .navbar-nav li {
   padding-left: 30px;
@@ -193,15 +170,13 @@ footer {
   margin-top: 0; }
 
 .card {
-  margin: 1rem 1.5rem 5rem 1.5rem;
+  margin: 1rem 5rem 5rem 5rem;
   border-radius: 1rem;
   border: none;
-  box-shadow: 0 30px 30px 5px rgba(15, 26, 39, 0.2);
-  max-width: 22rem; }
+  box-shadow: 0 30px 30px 5px rgba(15, 26, 39, 0.2); }
   .card .card-img-top {
     border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    max-height: 330px; }
+    border-top-right-radius: 1rem; }
 
 .page-id-1249 .card a,
 .page-id-1294 .card a,
@@ -212,8 +187,15 @@ footer {
 .wpcf7-mail-sent-ok {
   border: 2px solid #333333; }
 
-.blog {
-  margin-top: 80px; }
+.efbl_header_meta {
+  padding-left: 125px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center; }
+  @media only screen and (min-width: 768px) {
+    .efbl_header_meta {
+      padding-top: 0;
+      justify-content: left; } }
 
 .header {
   height: 698px;
@@ -258,48 +240,40 @@ footer {
   padding-top: 50vh; }
 
 .about {
-  margin-bottom: 1rem;
-  margin-top: 1rem; }
+  margin-bottom: 1rem; }
 
 .selfie {
-  background-image: url("https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_550/https://www.giemphotography.com/wp-content/uploads/2020/06/about-pic.jpg");
+  background-image: url("../shutter/img/about-pic.jpg");
   height: 320px;
   background-size: cover !important;
-  background-position: center center !important;
-  border-radius: 0.5rem;
-  margin-right: 1rem;
-  max-width: 350px; }
+  background-position: center center !important; }
   @media only screen and (min-width: 600px) {
     .selfie {
-      height: 600px;
-      max-width: 550px; } }
-
-.text {
-  margin-left: 1rem;
-  max-width: 550px; }
+      height: 600px; } }
 
 .about-text {
   padding-left: 4.5rem;
-  padding-right: 33rem; }
+  padding-right: 40rem; }
+  .about-text p {
+    font-size: 1.25rem; }
   @media only screen and (max-width: 1740px) {
     .about-text {
-      padding-right: 20rem; } }
+      padding-right: 35rem; } }
   @media only screen and (max-width: 1610px) {
     .about-text {
-      padding-right: 15rem; } }
+      padding-right: 30rem; } }
   @media only screen and (max-width: 1481px) {
     .about-text {
-      padding-right: 10.5rem; } }
+      padding-right: 25rem; } }
   @media only screen and (max-width: 1351px) {
     .about-text {
-      padding-right: 7rem; } }
+      padding-right: 20rem; } }
   @media only screen and (max-width: 1220px) {
     .about-text {
-      padding-right: 2rem; } }
+      padding-right: 15rem; } }
   @media only screen and (max-width: 1110px) {
     .about-text {
-      padding-right: 1.5rem;
-      padding-left: 1.5rem; } }
+      padding-right: 10rem; } }
 
 .book-me {
   padding-top: 2.5rem; }
@@ -309,9 +283,6 @@ footer {
     font-family: "Spectral", serif;
     font-weight: 600;
     color: black; }
-
-#portfolio {
-  padding: 0; }
 
 .portfolio {
   margin-bottom: 1rem; }
@@ -342,7 +313,7 @@ footer {
       padding-bottom: 3rem; } }
   @media only screen and (max-width: 600px) {
     .form-section {
-      padding-right: 4.5rem;
+      padding-right: 10rem;
       padding-left: 4.5rem; } }
 
 .contact-photo {
@@ -355,16 +326,12 @@ footer {
     .contact-photo {
       background-image: url("../shutter/img/contact-mobile.jpg"); } }
 
-.page-id-1257 {
-  margin-top: 80px; }
-  .page-id-1257 .card a {
-    color: #ffffff; }
-  .page-id-1257 footer {
-    opacity: 1;
-    transform: 1, auto; }
+.page-id-1257 .card a {
+  color: #ffffff; }
 
-.parent-pageid-1257 {
-  margin-top: 80px; }
+.page-id-1257 footer {
+  opacity: 1;
+  transform: 1, auto; }
 
 .package {
   padding-bottom: 1rem; }
@@ -432,54 +399,11 @@ footer {
       padding-left: 4.5rem; } }
 
 .wedding-photo {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
   background-image: url("../shutter/img/contact.jpg");
-  height: 25.625rem;
-  max-width: 25.625rem;
+  height: 409px;
   width: 100%;
   background-size: cover !important;
   background-position: center center !important; }
   @media only screen and (max-width: 600px) {
     .wedding-photo {
       background-image: url("../shutter/img/contact-mobile.jpg"); } }
-
-.baby-photo {
-  margin-top: 2rem;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
-  background-image: url("../Shutter-child/img/packages/baby55.jpg");
-  height: 25.625rem;
-  max-width: 25.625rem;
-  width: 100%;
-  background-size: cover !important;
-  background-position: center center !important; }
-  @media only screen and (max-width: 600px) {
-    .baby-photo {
-      background-image: "../Shutter-child/img/packages/baby55.jpg"; } }
-
-.senior-photo {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
-  background-image: url("../Shutter-child/img/packages/senior-details.jpg");
-  height: 25.625rem;
-  max-width: 25.625rem;
-  width: 100%;
-  background-size: cover !important;
-  background-position: center center !important; }
-  @media only screen and (max-width: 600px) {
-    .senior-photo {
-      background-image: "../Shutter-child/img/packages/senior-details.jpg"; } }
-
-.toddler-photo {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
-  background-image: url("../Shutter-child/img/packages/toddler-details.jpg");
-  height: 25.625rem;
-  max-width: 25.625rem;
-  width: 100%;
-  background-size: cover !important;
-  background-position: center center !important; }
-  @media only screen and (max-width: 600px) {
-    .toddler-photo {
-      background-image: "../Shutter-child/img/packages/toddler-details.jpg"; } }

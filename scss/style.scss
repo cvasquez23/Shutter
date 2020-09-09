@@ -11,6 +11,7 @@
 **/
 
 @import 'abstract/variables';
+@import 'abstract/mixins';
 
 @import 'base/base';
 @import 'base/typography';
@@ -21,6 +22,7 @@
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/contact-form';
+@import 'components/facebook-feed';
 
 @import 'pages/client-albulms';
 @import 'pages/home';
