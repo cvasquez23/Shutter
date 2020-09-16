@@ -1,12 +1,16 @@
 .efbl_header_meta {
   padding-left: 125px;
   padding-top: 25px;
-
   display: flex;
   justify-content: center;
-
-  @include for-md-up {
+}
+@media only screen and (min-width: 768px) {
+  .efbl_header_meta {
     padding-top: 0;
     justify-content: left;
   }
+}
+
+.efbl-profile-title-wrap h2 {
+  padding-top: 0px;
 }

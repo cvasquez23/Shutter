@@ -1,3 +1,7 @@
+.parent-pageid-1257 {
+  margin-top: 80px;
+}
+
 .package {
   padding-bottom: 1rem;
 }
@@ -87,13 +91,65 @@
 }
 
 .wedding-photo {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
   background-image: url('../shutter/img/contact.jpg');
-  height: 409px;
+  height: 25.625rem;
+  max-width: 25.625rem;
   width: 100%;
   background-size: cover !important;
   background-position: center center !important;
 
   @media only screen and (max-width: 600px) {
     background-image: url('../shutter/img/contact-mobile.jpg');
+  }
+}
+
+.baby-photo {
+  margin-top: 2rem;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+  background-image: url('../Shutter-child/img/packages/baby55.jpg');
+  height: 25.625rem;
+  max-width: 25.625rem;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+@media only screen and (max-width: 600px) {
+  .baby-photo {
+    background-image: '../Shutter-child/img/packages/baby55.jpg';
+  }
+}
+
+.senior-photo {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+  background-image: url('../Shutter-child/img/packages/senior-details.jpg');
+  height: 25.625rem;
+  max-width: 25.625rem;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+@media only screen and (max-width: 600px) {
+  .senior-photo {
+    background-image: '../Shutter-child/img/packages/senior-details.jpg';
+  }
+}
+
+.toddler-photo {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+  background-image: url('../Shutter-child/img/packages/toddler-details.jpg');
+  height: 25.625rem;
+  max-width: 25.625rem;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+@media only screen and (max-width: 600px) {
+  .toddler-photo {
+    background-image: '../Shutter-child/img/packages/toddler-details.jpg';
   }
 }

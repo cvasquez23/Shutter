@@ -5,11 +5,16 @@ html {
 html,
 body {
   overflow-x: hidden;
-  height: 100%;
   width: 100vw;
+  position: relative;
 
   h2 {
-    padding-top: 5rem;
+    padding-top: 4rem;
+  }
+
+  h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   hr {

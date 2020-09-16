@@ -1,8 +1,6 @@
 // Footer
 footer {
-  background: #333333;
   color: white;
-  height: 285px;
 
   a {
     color: white;
@@ -15,6 +13,25 @@ footer {
       text-decoration: none;
     }
   }
+}
+
+.cv a {
+  color: #4eb89f;
+}
+
+.credit p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.credit a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+footer {
+  background: #333333;
+  height: 285px;
 }
 
 .fa-up {
@@ -30,21 +47,8 @@ footer {
   }
 }
 
-.credit {
-  p {
-    font-family: $body-font;
-    font-size: 12px;
-  }
-
-  a {
-    font-family: $body-font;
-    font-size: 12px;
-  }
-}
-
 .page-id-1249,
-.page-id-1294,
-.page-id-1316 {
+.blog {
   footer {
     opacity: 1;
     transform: (1, auto);
