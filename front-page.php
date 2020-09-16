@@ -23,7 +23,9 @@
     <section id="about" class="container about">
       <div class="row justify-content-center">
         <!-- About Picture -->
-        <div class="col-lg-6 selfie mx-auto"></div>
+        <div class="col-lg-6 selfie mx-auto p-0">
+          <img src="http://localhost:8080/giem-photography/wp-content/uploads/2020/06/about-pic.jpg" alt="Kim Giem and her husband">
+        </div>
 
         <!-- About Text -->
         <div class="col-lg-6 text">

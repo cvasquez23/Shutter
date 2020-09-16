@@ -279,10 +279,7 @@ footer {
   margin-top: 1rem; }
 
 .selfie {
-  background-image: url("../shutter/img/about-pic.jpg");
   height: 320px;
-  background-size: cover !important;
-  background-position: center center !important;
   border-radius: 0.5rem;
   margin-right: 1rem;
   max-width: 350px; }
@@ -290,6 +287,8 @@ footer {
     .selfie {
       height: 600px;
       max-width: 550px; } }
+  .selfie img {
+    border-radius: 0.5rem; }
 
 .text {
   margin-left: 1rem;
@@ -327,10 +326,8 @@ footer {
     font-weight: 600;
     color: black; }
 
-#portfolio {
-  padding: 0; }
-
 .portfolio {
+  padding: 0;
   margin-bottom: 1rem; }
 
 .form-section {
