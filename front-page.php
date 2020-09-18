@@ -1,26 +1,33 @@
 <?php
 /**
- * The font-page for Shutter Theme
+ * The font-page for Giem Photography Theme
  *
- * @package Shutter
- * @since Shutter Theme 1.0.0
+ * @package Giem Photography
+ * @since Giem Photography Theme 1.0.0
  */
 ?>
 
 <?php get_header(); ?>
 
-    <!-- Header -->
-    <div id="home" class="container-fluid p-0">
+    <!-- Hero Image Area -->
+    <section id="home" class="container-fluid p-0">
       <div class="header fadeIn" style="background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)), url('<?php header_image(); ?>')">
         <div class="display-3">
           <h1> <?php bloginfo('name'); ?> </h1>
           <p class="lead"> <?php bloginfo('description'); ?> </p>
         </div>
       </div>
-    </div>
-    <div id="about" class="container about">
+    </section>
+
+    <!-- About Area -->
+    <section id="about" class="container about">
       <div class="row justify-content-center">
-        <div class="col-lg-6 selfie mx-auto"></div>
+        <!-- About Picture -->
+        <div class="col-lg-6 selfie mx-auto p-0">
+          <img src="http://localhost:8080/giem-photography/wp-content/uploads/2020/06/about-pic.jpg" alt="Kim Giem and her husband">
+        </div>
+
+        <!-- About Text -->
         <div class="col-lg-6 text">
           <h2>About Me</h2>
           <hr align="left" />
@@ -34,16 +41,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-
-    <div id="portfolio" class="container-fluid tag">
+    <!-- Portfolio Area -->
+    <section id="portfolio" class="container-fluid tag">
       <div id="portfolio" class="portfolio">
         <?php echo do_shortcode('[modula id="1197"]'); ?>
       </div>
-    </div>
+    </section>
 
-    <div id="connect" class="container tag">
+    <!-- Facebook Feed Area -->
+    <section id="connect" class="container tag">
       <div class="row justify-content-center">
         <div>
           <h2>Connect With Me</h2>
@@ -53,10 +61,12 @@
           '[efb_feed fanpage_id="102699908246418" words_limit="25" post_limit="3" skin_id="1680" cache_unit="1" cache_duration="minutes" links_new_tab="1" show_like_box="0"]'
         ); ?>
       </div>
-    </div>
+    </section>
 
-    <div id="contact" class="container-fluid tag">
+    <!-- Contact Form Area -->
+    <section id="contact" class="container-fluid tag">
       <div class="row">
+        <!-- Form Section -->
         <div class="col-lg-6 form-section">
         <h2>Let's Talk</h2>
         <hr align="left" />
@@ -66,9 +76,11 @@
             '[contact-form-7 id="1244" title="Untitled"]'
           ); ?>
         </div>
+
+        <!-- Contact Photo -->
         <div class="col-lg-6 contact-photo"></div>
       </div>
-    </div>
+    </section>
 
 
 <?php get_footer(); ?>
