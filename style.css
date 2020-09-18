@@ -278,17 +278,18 @@ footer {
   margin-bottom: 1rem;
   margin-top: 1rem; }
 
-.selfie {
+.selfie img {
+  display: block;
+  border-radius: 0.5rem;
   height: 320px;
   border-radius: 0.5rem;
-  margin-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 350px; }
   @media only screen and (min-width: 600px) {
-    .selfie {
+    .selfie img {
       height: 600px;
       max-width: 550px; } }
-  .selfie img {
-    border-radius: 0.5rem; }
 
 .text {
   margin-left: 1rem;
@@ -326,8 +327,10 @@ footer {
     font-weight: 600;
     color: black; }
 
+#portfolio {
+  padding: 0; }
+
 .portfolio {
-  padding: 0;
   margin-bottom: 1rem; }
 
 .form-section {
@@ -360,14 +363,14 @@ footer {
       padding-left: 4.5rem; } }
 
 .contact-photo {
-  background-image: url("../shutter/img/contact.jpg");
+  background-image: url("https://www.giemphotography.com/wp-content/uploads/2020/09/contact.jpg");
   height: 780px;
   width: 100%;
   background-size: cover !important;
   background-position: center center !important; }
   @media only screen and (max-width: 600px) {
     .contact-photo {
-      background-image: url("../shutter/img/contact-mobile.jpg"); } }
+      background-image: url("https://www.giemphotography.com/wp-content/uploads/2020/09/contact-mobile.jpg"); } }
 
 .page-id-1257 {
   margin-top: 80px; }

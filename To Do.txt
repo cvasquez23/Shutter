@@ -1,0 +1,2 @@
+Change hero image on "Homepage"
+Add fade-in effect on "Investment" page

@@ -24,7 +24,7 @@
       <div class="row justify-content-center">
         <!-- About Picture -->
         <div class="col-lg-6 selfie mx-auto p-0">
-          <img src="http://localhost:8080/giem-photography/wp-content/uploads/2020/06/about-pic.jpg" alt="Kim Giem and her husband">
+          <img src="https://www.giemphotography.com/wp-content/uploads/2020/06/about-pic.jpg" alt="Kim Giem and her husband">
         </div>
 
         <!-- About Text -->
@@ -58,7 +58,7 @@
           <hr>
         </div>
         <?php echo do_shortcode(
-          '[efb_feed fanpage_id="102699908246418" words_limit="25" post_limit="3" skin_id="1680" cache_unit="1" cache_duration="minutes" links_new_tab="1" show_like_box="0"]'
+          '[efb_feed fanpage_id="392580977567305" words_limit="50" post_limit="3" skin_id="1681" cache_unit="30" cache_duration="minutes" links_new_tab="1" show_like_box="0"]'
         ); ?>
       </div>
     </section>
