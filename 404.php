@@ -10,10 +10,12 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
    <head>
-      <meta charset="<?php bloginfo( 'charset' ); ?>">
+      <meta charset="<?php bloginfo('charset'); ?>">
       <link rel="profile" href="http://gmpg.org/xfn/11" />
-      <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-      <?php if (is_singular() && get_option( 'thread_comments' )) wp_enqueue_script( 'comment-reply' ); ?>
+      <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+      <?php if (is_singular() && get_option('thread_comments')) {
+        wp_enqueue_script('comment-reply');
+      } ?>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <?php wp_head(); ?>
       <link rel="stylesheet" href="https://giemphotography.com/wp-content/themes/shutter/404.css">
@@ -36,7 +38,9 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
          <div class="container-fluid">
-         <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ) ?></a>
+         <a class="navbar-brand" href="<?php echo esc_url(
+           home_url('/')
+         ); ?>"><?php bloginfo('name'); ?></a>
 
          </div>
       </nav>

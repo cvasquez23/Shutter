@@ -13,7 +13,7 @@ function style() {
       // autoprefixer
       .pipe(autoprefixer())
       // pass through scss compiler and minify
-      .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+      .pipe(sass().on('error', sass.logError))
       // rename
       // .pipe(rename({ suffix: '.min' }))
       // where to save

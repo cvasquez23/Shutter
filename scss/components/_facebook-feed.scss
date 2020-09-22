@@ -1,16 +1,16 @@
-.efbl_header_meta {
-  padding-left: 125px;
-  padding-top: 25px;
-  display: flex;
-  justify-content: center;
-}
-@media only screen and (min-width: 768px) {
-  .efbl_header_meta {
-    padding-top: 0;
-    justify-content: left;
-  }
-}
+.efbl-story-wrapper {
+  border-radius: 1rem;
 
-.efbl-profile-title-wrap h2 {
-  padding-top: 0px;
+  .efbl-profile-title-wrap h2 {
+    padding-top: 0px;
+  }
+
+  .esf-share {
+    border-radius: 0.25rem !important;
+    font-family: $body-font !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    padding: 0.375rem 0.75rem !important;
+    line-height: 1.5 !important;
+  }
 }

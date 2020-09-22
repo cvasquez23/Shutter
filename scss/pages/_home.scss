@@ -1,6 +1,9 @@
 // Hero Image
 .header {
-  height: 698px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)),
+    url('https://www.giemphotography.com/wp-content/uploads/2020/09/header-xs.jpg');
+  background-attachment: fixed;
+  height: 320px;
   width: 100%;
   background-attachment: fixed;
   background-size: auto, auto, cover !important;
@@ -9,15 +12,25 @@
   color: white;
   text-shadow: 1px 2px 1px black;
 
-  @media only screen and (max-width: 778px) {
-    background-position: 25% 0;
+  @include for-sm-up {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)),
+      url('https://www.giemphotography.com/wp-content/uploads/2020/09/header2-sm.jpg');
+    height: 698px;
   }
 
-  @media only screen and (max-width: 600px) {
-    background-size: auto, 1500px, cover !important;
-    height: 320px;
-    background-attachment: local;
-    background-position: 25% 40%;
+  @include for-md-up {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)),
+      url('https://www.giemphotography.com/wp-content/uploads/2020/09/header2-md.jpg');
+  }
+
+  @include for-lg-up {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)),
+      url('https://www.giemphotography.com/wp-content/uploads/2020/09/header2-lg.jpg');
+  }
+
+  @include for-xl-only {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)),
+      url('https://www.giemphotography.com/wp-content/uploads/2020/09/header_2.jpg');
   }
 
   p {

@@ -11,7 +11,7 @@
 
     <!-- Hero Image Area -->
     <section id="home" class="container-fluid p-0">
-      <div class="header fadeIn" style="background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)), url('<?php header_image(); ?>')">
+      <div class="header fadeIn">
         <div class="display-3">
           <h1> <?php bloginfo('name'); ?> </h1>
           <p class="lead"> <?php bloginfo('description'); ?> </p>

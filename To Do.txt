@@ -1,2 +1,6 @@
 Change hero image on "Homepage"
 Add fade-in effect on "Investment" page
+Restyle buttons on "Homepage"
+Restyle contact form
+Make links bigger on mobile
+Recode for mobile first
