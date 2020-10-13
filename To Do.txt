@@ -1,6 +1,12 @@
-Change hero image on "Homepage"
-Add fade-in effect on "Investment" page
+Add fade-in effect on "Investment" page when Kim Gets you the rest of the packages
 Restyle buttons on "Homepage"
 Restyle contact form
 Make links bigger on mobile
 Recode for mobile first
+Reorganize Code for 7-1
+Resize contact photo 533 height
+
+Still Waiting for:
+School Pictures Info
+Wedding photos
+More Family Photos

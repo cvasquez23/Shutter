@@ -30,6 +30,11 @@
                </span>
                </p>
             </div>
+            <div class="row justify-content-center">
+               <p class="text-center m-2 privacy">
+               This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy"> Google Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+               </p>
+            </div>
          </div>
       </footer>
 
