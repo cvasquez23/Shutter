@@ -5,8 +5,6 @@
     let pageBottom = pageTop + $(window).height();
     let tags = $('.tag');
 
-    console.log('scrollin down the river');
-
     for (let i = 0; i < tags.length; i++) {
       let tag = tags[i];
 
@@ -23,7 +21,6 @@
       : ($('.fade-in').removeClass('scrolled'),
         $('.header').removeClass('scrolled'));
 
-    console.log('scrolled');
   });
 
   //Hamburger Menu
@@ -31,7 +28,6 @@
     $('button').click(function() {
       $('button:first').toggleClass('is-active');
       $('body').toggleClass('ofh');
-      console.log('Well this worked');
     });
   });
 
